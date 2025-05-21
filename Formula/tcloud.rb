@@ -34,7 +34,7 @@ class Tcloud < Formula
     on_linux do
       if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
         url "https://github.com/thalassa-cloud/cli/releases/download/v0.2.0/tcloud_0.2.0_linux_arm64.tar.gz", :using => CurlDownloadStrategy
-        sha256 "4fb78ed6d19a1beb12f4864b408351066a9ca358419c948c814d408f69e7449f"
+        sha256 "8057b24406c9172d801a35c32a8b7ca53ddc38916c9ad1fac5344cd1432bb0a9"
   
         def install
             bin.install "tcloud"
@@ -45,7 +45,7 @@ class Tcloud < Formula
       end
       if Hardware::CPU.intel?
         url "https://github.com/thalassa-cloud/cli/releases/download/v0.2.0/tcloud_0.2.0_linux_amd64.tar.gz", :using => CurlDownloadStrategy
-        sha256 "8057b24406c9172d801a35c32a8b7ca53ddc38916c9ad1fac5344cd1432bb0a9"
+        sha256 "4fb78ed6d19a1beb12f4864b408351066a9ca358419c948c814d408f69e7449f"
   
         def install
           bin.install "tcloud"
