@@ -57,7 +57,7 @@ class Tcloud < Formula
     end
   
     depends_on "zsh" => :optional
-    depends_on "fnf" => :optional
+    depends_on "fzf" => :optional
   
     test do
       system "#{bin}/tcloud version"
