@@ -4,7 +4,7 @@
 class Tcloud < Formula
     desc "Thalassa Cloud CLI"
     homepage "https://github.com/thalassa-cloud/tcloud"
-    version "0.2.0"
+    version "0.4.0"
   
     on_macos do
       if Hardware::CPU.arm?
