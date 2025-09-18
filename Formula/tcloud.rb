@@ -4,12 +4,12 @@
 class Tcloud < Formula
     desc "Thalassa Cloud CLI"
     homepage "https://github.com/thalassa-cloud/tcloud"
-    version "0.5.0"
+    version "0.7.0"
   
     on_macos do
       if Hardware::CPU.arm?
-        url "https://github.com/thalassa-cloud/cli/releases/download/v0.5.0/tcloud_0.5.0_darwin_arm64.tar.gz", :using => CurlDownloadStrategy
-        sha256 "5b0a455b9208baea57caecc812dd11cf05c2ba5f5580a10279b2728628652bcb"
+        url "https://github.com/thalassa-cloud/cli/releases/download/v0.7.0/tcloud_0.7.0_darwin_arm64.tar.gz", :using => CurlDownloadStrategy
+        sha256 "c309c7d7c1ed67b26a80128f4a409c8bdd94f578b66f6bc439273d146d5d4899"
   
         def install
           bin.install "tcloud"
@@ -19,8 +19,8 @@ class Tcloud < Formula
         end
       end
       if Hardware::CPU.intel?
-        url "https://github.com/thalassa-cloud/cli/releases/download/v0.5.0/tcloud_0.5.0_darwin_amd64.tar.gz", :using => CurlDownloadStrategy
-        sha256 "5d10ac5f5c35550d5c67475a2a7f35f7745ceac03ea5ef9861d15358a917a5be"
+        url "https://github.com/thalassa-cloud/cli/releases/download/v0.7.0/tcloud_0.7.0_darwin_amd64.tar.gz", :using => CurlDownloadStrategy
+        sha256 "de45f92265d18d697345eba3c3382eaee0b0c0fe466bbc6033523fb13e93907e"
   
         def install
           bin.install "tcloud"
@@ -33,8 +33,8 @@ class Tcloud < Formula
   
     on_linux do
       if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-        url "https://github.com/thalassa-cloud/cli/releases/download/v0.5.0/tcloud_0.5.0_linux_arm64.tar.gz", :using => CurlDownloadStrategy
-        sha256 "0f6e030ffb5b9cae537978f1d4bb41d73f06013014447c4172d3ac711bde773f"
+        url "https://github.com/thalassa-cloud/cli/releases/download/v0.7.0/tcloud_0.7.0_linux_arm64.tar.gz", :using => CurlDownloadStrategy
+        sha256 "d8dc3aec43d5316031d940c71c9279514a4882627610af9fd5725a05ff6c120f"
   
         def install
             bin.install "tcloud"
@@ -44,8 +44,8 @@ class Tcloud < Formula
         end
       end
       if Hardware::CPU.intel?
-        url "https://github.com/thalassa-cloud/cli/releases/download/v0.5.0/tcloud_0.5.0_linux_amd64.tar.gz", :using => CurlDownloadStrategy
-        sha256 "03e503243d973ebd50aea39080d4c42d98b536eee13fe1de890d7a8b24a8dc17"
+        url "https://github.com/thalassa-cloud/cli/releases/download/v0.7.0/tcloud_0.7.0_linux_amd64.tar.gz", :using => CurlDownloadStrategy
+        sha256 "8cae5b974ffe5f9e634b94d1975600b3912ac079331684711330b55c918ab960"
   
         def install
           bin.install "tcloud"
